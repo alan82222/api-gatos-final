@@ -1,38 +1,77 @@
-.App {
+/* App.css */
+
+/* Estilos generales */
+body {
+  background-color: #f5f5f5;
+  background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 1a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0z" fill="%23ccc"/%3E%3Cpath d="M4 2a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1zm0 0a1 1 0 0 0-1 1 1 1 0 1 0 2 0 1 1 0 0 0-1-1z" fill="%23ccc"/%3E%3C/svg%3E');
+  background-repeat: repeat;
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff; /* Color de fondo del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.jumbotron {
+  background-image: url('https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_960_720.jpg');
+  background-size: cover; /* Cubrir todo el área */
+  color: #fff; /* Color de texto */
+  text-align: center;
+  padding: 50px 0;
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 20px; /* Bordes redondeados para los campos de entrada */
+}
+
+.btn-primary {
+  border-radius: 20px;
+  background-color: #4CAF50; /* Color de fondo del botón */
+  border-color: #4CAF50; /* Color del borde del botón */
+  transition: background-color 0.3s ease; /* Transición para el cambio de color */
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Color del botón al pasar el mouse */
+  border-color: #45a049; /* Color del borde del botón al pasar el mouse */
+}
+
+.search-bar {
+  position: relative;
+  transition: all 0.3s ease; /* Transición para animar el enfoque */
+}
+
+.search-bar:focus-within {
+  transform: scale(1.05); /* Escala la barra de búsqueda al enfocarse */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al enfocarse */
+}
+
+.modal-content {
+  background-color: #fff; /* Color de fondo del modal */
+  border-radius: 10px;
+}
+
+.modal-title {
+  color: #333; /* Color del título del modal */
+}
+
+.modal-body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.modal-footer {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
 }
